@@ -1,0 +1,242 @@
+*{
+    box-sizing: border-box;
+}
+.wrapper {
+    max-width: 1200px;
+}
+
+img{
+    width: 100%;
+    
+}
+
+.site-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    text-align: end;
+    gap: 20px;
+    text-wrap: nowrap;
+   
+  }
+
+ 
+
+ul a{
+    display:flex;
+    justify-content: flex-end;
+    font-size: larger;
+    font-family: "Poppins", sans-serif;
+}
+  
+    a:link {
+        color:black;
+        text-decoration: none;
+        font-size: 40px;
+        text-transform: uppercase;
+        
+      }
+    
+      a:visited {
+        color:black;
+        text-decoration: none;
+        font-size: larger;
+        font-size: 40px;
+        text-transform: uppercase;
+        
+      }
+    
+      ul{ 
+        list-style-type: none;
+    }
+
+    #black {
+        background-color: black;
+        color: white;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        
+    }
+
+    #tryit {
+       
+        background-color:#fff;
+        
+    }
+   
+    #names p{
+        padding-bottom: 50px;
+        font-style: italic;
+    }
+
+    h1{
+        font-size: 2.027rem;
+        font-family: "Poppins", sans-serif;
+        font-weight:bold;
+        
+    }
+
+    h2{
+        font-size: 1.802rem;
+        padding-top: 50px;
+        font-family: "Poppins", sans-serif;
+        
+        text-align: center;
+    }
+    h3{
+        font-size: 1.266rem;
+    }
+    p{
+        font-family: "Poppins", sans-serif;
+        font-weight:regular;
+    }
+    #button {
+        background-color:black; /* Green */
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight:regular;
+        border: none;
+        color: white;
+        padding: 5px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
+
+      #button a {
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight:bold;
+        font-size: small;
+      }
+      #button {
+        border-radius: 4px;}
+
+        #bold p{
+            font-family: "Poppins", sans-serif;
+            text-transform: uppercase;
+            font-weight:bold;
+        }
+
+        #bold2 p{
+            font-family: "Poppins", sans-serif;
+            
+            font-weight:bold;
+        }
+   
+
+   
+   .product-grid{
+   max-width: 960px;
+   margin:auto;
+   padding: 0 8px;
+    
+   }
+
+   .product-grid .images {
+    display: grid;
+    
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid: gap 25px; ;
+    grid-template-areas: 
+    "div1 div1 div1 div1 div1 div1"
+    "div1 div1 div1 div1 div1 div1"
+    "div1 div1 div1 div1 div1 div1"
+    "div2 div2 div3 div3 div4 div4";
+    
+   }
+
+   .product-grid .images img:nth-child(1){
+    grid-area: div1;
+    padding-bottom: 20px;
+    border-radius: 3%;
+   }
+
+   .product-grid .images img:nth-child(2){
+    grid-area: div2;
+    padding-right: 14px;
+    border-radius: 3%;
+    
+   }
+
+   .product-grid .images img:nth-child(3){
+    grid-area: div3;
+    padding-right: 10px;
+    border-radius: 3%;
+   }
+
+   .product-grid .images img:nth-child(4){
+    grid-area: div4;
+    padding-left: 10px;
+    border-radius: 3%;
+   }
+
+   footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    display:inline-block;
+    margin-top: 20px;
+    padding: 10px;
+    width: 768px;
+    
+   }
+
+   .product-grid2 .images2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid: gap 25px; ;
+    grid-template-areas: 
+    "div1 div1 div3 div3 "
+    "div1 div1 div3 div3 "
+    "div2 div2 div4 div4 "
+    "div2 div2 div4 div4";
+   }
+   .product-grid2 .images2 img:nth-child(1){
+    grid-area: div1;
+    padding-bottom: 20px;
+    border-radius: 3%;
+   }
+
+   .product-grid2 .images2 img:nth-child(2){
+    grid-area: div2;
+    padding-right: 14px;
+    border-radius: 3%;
+   }
+
+   .product-grid2 .images2 img:nth-child(3){
+    grid-area: div3;
+    padding-right: 10px;
+    border-radius: 3%;
+   }
+
+   .product-grid2 .images2 img:nth-child(4){
+    grid-area: div4;
+    padding-left: 10px;
+    border-radius: 3%;
+   }
+
+   @media (min-width: 768px) {
+
+    .product-grid .images{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "div1 div2" 
+    "div3 div4";
+   
+}
+   }
+   @media (min-width: 960px) {
+
+   }
